@@ -2,21 +2,21 @@ import logo from "./logo.svg";
 import "./App.css";
 
 function App() {
+  const props = {
+    id: "input",
+    type: "text",
+    maxLength: "3",
+  };
   return (
-    <div className='App'>
-      <SayHello />
-    </div>
-  );
-}
-
-function SayHello() {
-  const name = "Bruce";
-  const error = true;
-  return (
-    <>
-      <h1>Hola {error ? "error" : "success"}</h1>
-      <p>como estan</p>
-    </>
+    <p
+      style={{
+        color: "red",
+        textAlign: "center",
+        fontSize: "5rem",
+      }}
+    >
+      Hola Mundo
+    </p>
   );
 }
 
