@@ -10,7 +10,14 @@ function App() {
 }
 
 function SayHello() {
-  return <p>Hola Mundo</p>;
+  const name = "Bruce";
+  const error = true;
+  return (
+    <>
+      <h1>Hola {error ? "error" : "success"}</h1>
+      <p>como estan</p>
+    </>
+  );
 }
 
 export default App;
